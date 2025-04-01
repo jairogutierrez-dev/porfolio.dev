@@ -1,0 +1,30 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+
+const EXPERIENCE = [
+  {
+    date: "Abril 2022 - Junio 2024",
+    title: "Programador NAV/BCN 360",
+    company: "Ayesa/Ibermática",
+    description:
+      "Responsable de implementación de aplicaciones web con JavaScript, HTML y CSS mediante ControlAddIn. Resolución y mantenimiento de incidencias dentro de estas implementaciones y vinculación de APIs con sistemas externos.",
+  },
+  {
+    date: "2016 - 2022",
+    title: "Trabajos estacionales",
+    company: "Atresmedia/Eumovil",
+    description:
+      "Experiencia en restauración y como ayudante de plato en televisión. En esta etapa aprendí a trabajar en equipo y a manejar situaciones de extrema presión.",
+  },
+];
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>

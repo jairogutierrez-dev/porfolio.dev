@@ -1,0 +1,59 @@
+---
+const personalImageAlt = "Jairo Gutiérrez";
+import Badge from "../components/Badge.astro";
+import GitHubIcon from "./icons/GitHub.astro";
+import LinkedInIcon from "./icons/LinkedIn.astro";
+import CurriculumIcon from "./icons/Curriculum.astro";
+import SocialPIll from "../components/SocialPIll.astro";
+---
+
+<div class="max-w-xl">
+  <div class="flex gap-4 mb-4">
+    <img
+      class="rounded-full shadow-lg size-16"
+      src="/jairo.webp"
+      alt={personalImageAlt}
+    />
+    <a
+      href="https://linkedin.com/in/jairo-gutierrez-sivila"
+      target="_blank"
+      rel="noopener"
+      class="flex items-center transition md:justify-center md:hover:scale-105"
+    >
+      <Badge>Disponible para trabajar</Badge>
+    </a>
+  </div>
+  <h1
+    class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
+  >
+    ¡Hola! soy Jairo
+  </h1>
+  <p
+    class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300"
+  >
+    +2 años de experiencia como Programador. <strong
+      >Profesional graduado en Desarrollo de Aplicaciones Web y Multiplataforma</strong
+    > de Madrid, España. Apasionado creador de aplicaciones web que fusionan habilidades
+    técnicas con una visión artística.
+  </p>
+
+  <nav class="flex flex-wrap gap-4 mt-8">
+    <SocialPIll href="https://www.linkedin.com/in/jairo-gutiérrez-sivila">
+      <LinkedInIcon class="size-4 md:size-6" />
+      LinkedIn
+    </SocialPIll>
+    <SocialPIll href="https://github.com/jairogutierrez-dev">
+      <GitHubIcon class="size-4 md:size-6" />
+      GitHub
+    </SocialPIll>
+
+    <SocialPIll
+      href="/JairoGutierrezSivilaCV2025.pdf"
+      download="JairoGutierrezSivilaCV2025"
+      class="content-download"
+    >
+      <CurriculumIcon class="size-4 md:size-6" />
+      CV
+    </SocialPIll>
+  </nav>
+</div>
