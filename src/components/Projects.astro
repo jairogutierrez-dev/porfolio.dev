@@ -4,6 +4,7 @@ import NextJS from "./icons/NextJS.astro";
 import Tailwind from "./icons/Tailwind.astro";
 import React from "./icons/React.astro";
 import Firebase from "./icons/Firebase.astro";
+import PHP from "./icons/PHP.astro";
 import Link from "./icons/Link.astro";
 import LinkButton from "./LinkButton.astro";
 
@@ -28,10 +29,15 @@ const TAGS = {
     class: "bg-[#e8dcd1] text-black",
     icon: Firebase,
   },
+  PHP: {
+    name: "",
+    class: "bg-[#6082bb] text-black",
+    icon: PHP,
+  },
 };
 const PROJECTS = [
   {
-    title: "Jairoshop - Demo ecommerce",
+    title: "Jairoshop - Demo E-commerce",
     description:
       "E-commerce para una tienda de ropa desarrollado mediante React conectado a una base de datos en Firebase. Creado desde cero con React, Javascript y CSS.",
     link: "https://jairo-shop.netlify.app",
@@ -39,14 +45,15 @@ const PROJECTS = [
     image: "/projects/jairo-shop.webp",
     tags: [TAGS.REACT, TAGS.FIREBASE],
   },
-  // {
-  //   title: "AdventJS - Retos de programación con JavaScript y TypeScript",
-  //   description:
-  //     "Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS.",
-  //   link: "https://adventjs.dev",
-  //   image: "/projects/svgl.webp",
-  //   tags: [TAGS.NEXT, TAGS.TAILWIND],
-  // },
+  {
+    title: "Impresiones 3D - E-commerce ",
+    description:
+      "Plataforma de venta digital donde se simula la venta y compra de diversos objetos realizados con impresion 3d. Creado desde cero con PHP, HTML, CSS, Javascript conectado con un base de datos MySQL",
+    github: "https://github.com/jairogutierrez-dev/jairoshop",
+    link: "http://tienda3d.free.nf",
+    image: "/projects/impresiones3d.webp",
+    tags: [TAGS.PHP],
+  },
 ];
 ---
 
