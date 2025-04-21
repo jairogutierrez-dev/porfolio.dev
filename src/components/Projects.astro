@@ -5,6 +5,10 @@ import Tailwind from "./icons/Tailwind.astro";
 import React from "./icons/React.astro";
 import Firebase from "./icons/Firebase.astro";
 import PHP from "./icons/PHP.astro";
+import HTML from "./icons/HTML.astro";
+import CSS from "./icons/CSS.astro";
+import Javascript from "./icons/js.astro";
+import Mysql from "./icons/Mysql.astro";
 import Link from "./icons/Link.astro";
 import LinkButton from "./LinkButton.astro";
 
@@ -34,6 +38,26 @@ const TAGS = {
     class: "bg-[#6082bb] text-black",
     icon: PHP,
   },
+  HTML: {
+    name: "HTML 5",
+    class: "bg-[#f0e9e5] text-black",
+    icon: HTML,
+  },
+  CSS: {
+    name: "CSS",
+    class: "bg-[#f0e9e5] text-black",
+    icon: CSS,
+  },
+  JAVASCRIPT: {
+    name: "Javascript",
+    class: "bg-[#f4e8aa] text-black",
+    icon: Javascript,
+  },
+  MYSQL: {
+    name: "MySQL",
+    class: "bg-[#e9e3d3] text-black",
+    icon: Mysql,
+  },
 };
 const PROJECTS = [
   {
@@ -49,10 +73,10 @@ const PROJECTS = [
     title: "Impresiones 3D - E-commerce ",
     description:
       "Plataforma de venta digital donde se simula la venta y compra de diversos objetos realizados con impresion 3d. Creado desde cero con PHP, HTML, CSS, Javascript conectado con un base de datos MySQL",
-    github: "https://github.com/jairogutierrez-dev/jairoshop",
+    github: "https://github.com/jairogutierrez-dev/Impresiones-3d",
     link: "http://tienda3d.free.nf",
     image: "/projects/impresiones3d.webp",
-    tags: [TAGS.PHP],
+    tags: [TAGS.PHP, TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT, TAGS.MYSQL],
   },
 ];
 ---
